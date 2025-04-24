@@ -1,0 +1,244 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* src/components/QuestionScreen.css */
+.question-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+.question-counter {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+.question-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.option-button {
+  padding: 15px 20px;
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover {
+  border-color: #4f46e5;
+}
+
+.option-button.selected {
+  border-color: #4f46e5;
+  background-color: #eef2ff;
+  font-weight: 500;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.nav-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.prev {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.prev:hover {
+  background-color: #d4d4d4;
+}
+
+.submit {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.submit:hover {
+  background-color: #4338ca;
+}
+
+.submit:disabled {
+  background-color: #a5a5a5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e53e3e;
+  margin-top: 15px;
+}
+
+/* src/components/ResultScreen.css */
+.result-screen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.result-container {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.result-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.archetype-card {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.archetype-name {
+  font-size: 26px;
+  color: #4f46e5;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.archetype-description {
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.result-details,
+.characteristic-section,
+.recommendation-section {
+  margin-bottom: 30px;
+}
+
+.result-details h3,
+.characteristic-section h3,
+.recommendation-section h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 8px;
+}
+
+.analysis,
+.recommendations {
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.characteristics {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.characteristics li {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.restart-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.restart-button:hover {
+  background-color: #4338ca;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 18px;
+  color: #666;
+}
